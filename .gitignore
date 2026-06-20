@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Calibration artifacts (captured sessions, solved outputs, rendered boards)
+runs/
+*.png
+!docs/**/*.png
+T_base_zed2i.yaml
+zed2i_intrinsics.yaml
+session.json
+report.json
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

@@ -1,0 +1,15 @@
+# Calib.io ChArUco target.
+#
+# IMPORTANT: squares_xy is (cols, rows) == (squaresX, squaresY) in OpenCV's CharucoBoard.
+# A board catalogued as "9 x 14" (9 rows x 14 columns) therefore has squares_xy = [14, 9].
+#
+# VERIFY these against the spec sheet / engraving on YOUR physical board before trusting any result --
+# a wrong square_length scales the whole extrinsic linearly (a 1 mm error on a 40 mm square = 2.5%).
+# legacy_pattern: leave null to auto-resolve on the first capture (picks the parity that detects more
+# corners); pin it true/false once you have confirmed which your board uses.
+board:
+  squares_xy: [14, 9]        # (cols, rows)
+  square_length_m: 0.040     # checker square side, metres  <-- CONFIRM on your board
+  marker_length_m: 0.030     # aruco marker side, metres    <-- CONFIRM on your board
+  aruco_dict: DICT_5X5_100   # <-- CONFIRM (Calib.io boards are often 4x4/5X5; check the spec)
+  legacy_pattern: null

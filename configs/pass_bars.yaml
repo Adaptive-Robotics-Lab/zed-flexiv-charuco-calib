@@ -1,0 +1,24 @@
+# Numeric acceptance bars -- every threshold the verdict logic uses, in one auditable place.
+# Tighten for a research-grade calibration; loosen only with a documented reason.
+pass_bars:
+  # --- intrinsics (audit of the rectified ZED stream against factory K) ---
+  intrinsics_rms_px_pass: 0.3      # factory K reprojects this well or better -> trust it
+  intrinsics_rms_px_fail: 1.0      # above this, something is wrong (wrong board params? blur?)
+  per_view_rms_multiple: 3.0       # drop a view whose RMS exceeds this x the median
+
+  # --- hand-eye cross-solver agreement (5 solvers should converge) ---
+  cross_solver_translation_mm_pass: 2.0
+  cross_solver_translation_mm_fail: 3.0
+  cross_solver_rotation_deg_pass: 0.2
+  cross_solver_rotation_deg_fail: 0.5
+
+  # --- AX=XB residual + per-frame PnP outlier rejection ---
+  axxb_translation_mm_fail: 2.0
+  per_frame_pnp_px_fail: 1.0
+
+  # --- leave-one-out stability ---
+  loo_translation_std_mm_fail: 5.0
+
+  # --- physical touch test (the number that predicts grasp success) ---
+  touch_test_mm_pass: 3.0
+  touch_test_mm_fail: 5.0
