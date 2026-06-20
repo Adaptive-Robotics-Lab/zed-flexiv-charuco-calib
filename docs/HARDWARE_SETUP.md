@@ -57,12 +57,33 @@ the hardware is mounted, continue with the [Tutorial](TUTORIAL.md) for capture a
 
 ---
 
+## The actual parts (official Calib.io photos)
+
+<div class="grid" markdown>
+
+![Calib.io Robot Flange Mount — assembled](https://calib.io/cdn/shop/files/ISOflangemountv10.png?v=1696318924&width=800){ loading=lazy }
+
+![Calib.io ChArUco target (DICT_5X5)](https://calib.io/cdn/shop/products/calib.io_charuco_200x150_9x12_15_DICT_5X5_70d857e9-6c99-431c-afb1-520769a71290.png?v=1682070801&width=800){ loading=lazy }
+
+![Flange fitting (ISO 9409-1-50-4-M6 side)](https://calib.io/cdn/shop/files/flange_fitting.png?v=1696319416&width=600){ loading=lazy }
+
+![Low-profile plate adapter (board side)](https://calib.io/cdn/shop/files/plate_adapter.png?v=1696319462&width=600){ loading=lazy }
+
+</div>
+
+*Product photos © [Calib.io](https://calib.io), shown for reference. Order the
+**[Robot Flange Mount](https://calib.io/products/robot-flange-mount)** (assembly, top-left; its
+flange fitting bottom-left and plate adapter bottom-right) and the
+**[ChArUco target](https://calib.io/products/charuco-targets)** (top-right) from Calib.io.*
+
+---
+
 ## The full stack you're building
 
 ![Exploded view of the flange stack](assets/flange-stack.svg)
 
 Top to bottom: **Rizon flange → Calib.io flange fitting → low-profile plate adapter → ChArUco board**.
-The four steps below build this stack.
+The four steps below build this stack. (The schematic above mirrors the official photos.)
 
 ---
 

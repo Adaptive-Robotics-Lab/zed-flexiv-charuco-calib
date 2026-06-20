@@ -44,9 +44,20 @@ and [Method](METHOD.md).
 
 ## Hardware
 
-- **Calibration target (ChArUco):** <https://calib.io/products/charuco-targets> — `DICT_5X5`.
+<div class="grid" markdown>
+
+![Calib.io Robot Flange Mount](https://calib.io/cdn/shop/files/ISOflangemountv10.png?v=1696318924&width=700){ loading=lazy }
+
+![Calib.io ChArUco target (DICT_5X5)](https://calib.io/cdn/shop/products/calib.io_charuco_200x150_9x12_15_DICT_5X5_70d857e9-6c99-431c-afb1-520769a71290.png?v=1682070801&width=700){ loading=lazy }
+
+</div>
+
 - **Robot Flange Mount:** <https://calib.io/products/robot-flange-mount> — `ISO 9409-1-50-4-M6`,
   matching the Rizon 4s flange.
+- **Calibration target (ChArUco):** <https://calib.io/products/charuco-targets> — `DICT_5X5` family.
+
+*Product photos © [Calib.io](https://calib.io), shown for reference. The full illustrated mounting
+walkthrough is in the **[Hardware setup guide](HARDWARE_SETUP.md)**.*
 
 ## At a glance
 
