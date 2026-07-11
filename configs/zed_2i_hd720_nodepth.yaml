@@ -1,0 +1,11 @@
+# ZED 2i capture config (left rectified stream).
+#
+# HD720 is the sweet spot for a benchtop calibration: 1280x720, wide FOV, and the rectified left
+# image has zero distortion against the factory K. NEURAL depth replaces the deprecated ULTRA mode.
+# disable_self_calib freezes the factory K across opens so the calibration is reproducible.
+zed:
+  resolution: HD720
+  depth_mode: NONE
+  disable_self_calib: true
+  depth_minimum_distance_m: 0.2
+  serial: null            # null = first connected camera; pin your SN for multi-camera rigs
